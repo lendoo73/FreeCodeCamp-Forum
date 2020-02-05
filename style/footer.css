@@ -1,0 +1,18 @@
+/*  --------------------    Style footer    --------------------    */
+footer {
+    width: 100%;
+    --fccGreen: #006600;
+    background-color: var(--fccGreen);
+    color: white;
+    text-align: left;
+    padding: 12px;
+    font-family: sans-serif;
+    border-top: 1px solid black;
+    box-shadow: 0px -4px 10px grey;  
+}
+
+footer img {
+    width: 40px;
+    margin: -10px 10px;
+    float: right;
+}

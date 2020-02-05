@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    --borderRadius: 15px;
+}
+
+html {
+    background-image: url("../image/fcc-picture.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: -32px 0 0 0;
+}
+
+body > div {
+    margin: 0 20px; /* add extra left and right margin to the content */
+}
+
+header, h3 {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 1.5em;
+    color: aliceblue;
+    text-shadow: 2px 2px 8px darkgreen, -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#flex-header {
+    font-size: 1.4em;
+    font-weight:900;
+	color: aliceblue;
+    text-shadow: 2px 2px 8px darkgreen, -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#flex-header .replies,
+#flex-header .views,
+#flex-header .activity {
+    transform: rotate(90deg);
+}
+
+.flex-container {
+	display: flex;
+    flex-wrap: nowrap;
+    margin: 10px;
+}
+
+#flex-body .flex-container {
+    border: 1px solid black;
+    border-radius: var(--borderRadius);
+}
+
+.flex-container > div {
+    display: flex;
+    align-items: center;
+}
+
+#flex-body .flex-container > div {
+    background-color: antiquewhite;
+    background-image: linear-gradient(BurlyWood, antiquewhite, BurlyWood);
+    font-size: 1.2em;
+}
+
+.number {
+	width: 35px;
+    justify-content: center;
+    padding-left: 10px;
+    border-top-left-radius: var(--borderRadius);
+    border-bottom-left-radius: var(--borderRadius);
+}
+
+.topic {
+    flex-grow: 8;
+    width: 50%;
+    text-align: left;
+    justify-content: flex-start;
+    padding: 5px 10px;
+}
+
+.poster {
+	width: 178px;
+    justify-content: space-around;
+}
+
+.poster span {
+    margin-top: 5px; /* fix the positioning issue: center verically  */
+}
+
+.replies {
+	width: 55px;
+    justify-content: center;
+}
+
+.views {
+	width: 55px;
+    justify-content: center;
+}
+
+.activity {
+	width: 55px;
+    justify-content: center;
+    border-top-right-radius: var(--borderRadius);
+    border-bottom-right-radius: var(--borderRadius);
+}
+
+#flex-body .number,
+#flex-body .topic,
+#flex-body .poster,
+#flex-body .replies,
+#flex-body .views {
+    border-right: 1px solid rgb(200, 200, 200);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active, /* activated link */
+a:focus, /* the state that occurs when the user focuses on the link. This state can be seen when you tab to a link, or after you click on a link */
+a:link, /* unvisited link */
+a:visited { /* visited link */
+    color: inherit;
+}
+
+/*  --------------------    Style mobile device    --------------------    */
+@media (max-width: 768px) {
+    
+    header, h3 {
+        padding-top: 20px;
+        font-size: 1em;
+    }
+    
+    #flex-header {
+        font-size: 1em;
+        margin-bottom: 0;
+    }
+    
+    .flex-container {
+        flex-wrap: wrap;
+    }
+    
+    #flex-body .flex-container > div {
+        background-image: linear-gradient(BurlyWood, antiquewhite);
+    }
+    
+    .number {
+        order: 1;
+        border-bottom-left-radius: 0;
+    }
+    
+    .topic {
+        order: 6;
+        width: 100%;
+        border-top: 1px solid rgb(200, 200, 200);
+        border-bottom-left-radius: var(--borderRadius);
+        border-bottom-right-radius: var(--borderRadius);
+        justify-content: center;
+        text-align: center;
+    }
+    
+    #flex-body .flex-container .topic {
+        border-top: none;
+        background-image: linear-gradient(antiquewhite, BurlyWood);
+    }
+    
+    .poster {
+        order: 2;
+        width: 50%;
+        flex-grow: 8;
+    }
+    
+    .replies {
+        order: 3;
+    }
+    
+    .views {
+        order: 4;
+    }
+    
+    .activity {
+        order: 5;
+        border-bottom-right-radius: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    body > div {
+        margin: 0 5px;
+    }
+    
+    header, h3 {
+        font-size: 0.9em;
+    }
+    
+    #flex-header {
+        font-size: 0.9em;
+    }
+    
+    .flex-container {
+        margin: 6px 0;
+    }
+    
+    #flex-body .flex-container > div {
+        font-size: 1em;
+    }
+    
+    .number {
+        width: 25px;
+        padding-left: 5px;
+    }
+
+    .poster {
+        width: 36%;
+    }
+
+    .poster span {
+        margin-top: 3px; /* fix the positioning issue: center verically  */
+    }
+
+    .replies {
+        width: 30px;
+    }
+
+    .views {
+        width: 50px;
+    }
+
+    .activity {
+        width: 30px;
+    }
+}
