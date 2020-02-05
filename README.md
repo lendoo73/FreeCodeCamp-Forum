@@ -1,7 +1,7 @@
 # FreeCodeCamp-Forum
 <a href="https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-a-freecodecamp-forum-homepage" target="_blank">Build a freeCodeCamp Forum Homepage</a>
 
-<a href="https://cselko.offyoucode.co.uk/fcc/take_home/forum/" target="_blank">Live page</a>
+
 
 _**Objective:**_ Build a <del>CodePen.io</del> app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/JqdoMV.
 
@@ -20,3 +20,5 @@ Remember to use Read-Search-Ask if you get stuck.
 When you are finished, click the "I've completed this challenge" button and include a link to your CodePen.
 
 You can get feedback on your project by sharing it on the freeCodeCamp forum.
+<hr />
+<a href="https://cselko.offyoucode.co.uk/fcc/take_home/forum/" target="_blank">Live page</a>
