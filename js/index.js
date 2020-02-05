@@ -20,7 +20,6 @@ callAJAX(props).then(data => {
     const users = {};
     for (let i = 0; i < data.users.length; i ++) {
         users[data.users[i].id] = {
-            id: data.users[i].id,
             userName: data.users[i].username,
             avatar: data.users[i].avatar_template
         }
