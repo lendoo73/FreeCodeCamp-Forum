@@ -3,7 +3,7 @@
 
 <a href="https://cselko.offyoucode.co.uk/fcc/take_home/forum/" target="_blank">Live page</a>
 
-_**Objective:**_ Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/JqdoMV.
+_**Objective:**_ Build a <del>CodePen.io</del> app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/JqdoMV.
 
 Fulfill the below user stories. Use whichever libraries or APIs you need. Give it your own personal style.
 
